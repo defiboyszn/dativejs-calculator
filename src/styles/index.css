@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    font-family: Chalkboard, comic sans ms, "sanssecondaryerif";
+  }
+  .screen::-webkit-scrollbar {
+    @apply w-[8px] h-[8px];
+  }
+  /* rounded-[100vh] */
+  .screen::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .screen::-webkit-scrollbar-thumb {
+    @apply bg-base-100 rounded-[100vh] border-[1px] border-[#f6f7ed];
+  }
+}

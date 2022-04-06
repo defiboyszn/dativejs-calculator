@@ -6,7 +6,7 @@
     "dev:css": "npm run generate:css -- --watch",
     "dev:app": "rollup -wc",
     "generate:css": "npx tailwindcss -i ./src/styles/index.css -o ./styles/index.css",
-    "build": "rollup -c"
+    "build": "npm run generate:css && rollup -c"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^21.0.2",
